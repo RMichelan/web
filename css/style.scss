@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+$vermelho: rgb(255, 124, 124);
+$azul: rgb(163, 255, 242);
+$verde: rgb(176, 255, 163);
+$amarelo: rgb(247, 255, 163);
+
+* {
+	padding: 0;
+	margin: 0;
+}
+
+
+body {
+	background-color: #868e96;
+}
+
+
+
+div {
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	
+	font-family: sans-serif;
+	text-align: center;
+}
+
+
+h1 {
+	color: #fff;
+
+	padding-bottom: 30px;
+}
+
+
+/* Botões */
+li {
+	position: relative;
+	float: left;
+	padding: 10px;
+
+	list-style: none;
+	
+	a {
+	padding: 7px 15px 7px 15px;
+	position: inline-block;
+
+	text-decoration: none;
+
+	border-radius: 4px;
+	
+	background-color: none;
+
+	font-family: inherit;
+	font-size: 15px;
+	}
+}
+
+
+
+#btn-primeiro {
+	border: 2px solid $vermelho;
+	color: $vermelho;
+
+	&:hover {
+		color: #fff;
+		background-color: $vermelho;
+	}
+}
+
+
+#btn-segundo {
+	border: 2px solid $azul;
+	color: $azul;
+
+	&:hover {
+		background-color: $azul;
+		color: rgb(94, 94, 94);
+		transition: 0.8s;
+	}
+}
+
+
+#btn-terceiro {
+	border: 2px solid $verde;
+	color: $verde;
+
+	&:hover {
+		background-color: $verde;
+		color: rgb(94, 94, 94);
+		box-shadow: 2px 2px 4px #000000;
+	}
+}
+
+
+#btn-quarto {
+	opacity: 0.3;
+	border: 2px solid $amarelo;
+	color: $amarelo;
+
+	&:hover {
+		opacity: 1;	
+		transition: 0.55s;
+	}
+}
